@@ -7,10 +7,15 @@ class NumberProcessor:
             with open(self.input_file, 'r') as file:
                 nums =[int(n) for n in file.read().split()]
         
-        even_nums = [str(n) for n in nums if n % 2 == 0]
-        odd_nums= [str(n) for n in nums if n % 2 != 0]
+            even_nums = [str(n) for n in nums if n % 2 == 0]
+            odd_nums= [str(n) for n in nums if n % 2 != 0]
 
-        self.write_to_file('even.txt', even_nums)
-        self.write_to_file('odd.txt', odd_nums)
+            self.write_to_file('even.txt', even_nums)
+            self.write_to_file('odd.txt', odd_nums)
+            return True
+        except FileNotFoundError:
+            return False
 
-        
+    def write_to_file(self, file_name, data):
+        with open(file_name, 'w') as file:
+            file.write("\n".join(data))
