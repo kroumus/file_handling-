@@ -1,0 +1,10 @@
+James, 1.5
+Benjamin, 3
+Arthur, 1.15
+Jenny, 1.4
+Christopher, 2.3
+Trisha, 1.0
+Micheal, 2.5
+Samantha, 1.75
+Richards, 1.2
+Aldrich, 1.3
