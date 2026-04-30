@@ -4,7 +4,7 @@ class IntegerProcessor:
     
     def process_numbers(self):
         try:
-            with open(self.input_file, 'r') as file:
+            with open(self.file_name, 'r') as file:
                 data = file.readlines()
             
             with open('double.txt', 'w') as double, open ('triple.txt', 'w') as triple:
