@@ -8,7 +8,7 @@ class MyLife:
                 line = input("Enter Line: ")
                 file.write(line + "\n")
 
-                choice = input("Are there more lines? y/n").lower()
+                choice = input("Are there more lines? y/n ").lower()
                 if choice != 'y':
                     break
         print(f"Lines saved to {self.file_name}")
