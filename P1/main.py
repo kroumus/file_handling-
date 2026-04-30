@@ -7,3 +7,5 @@ def main():
     else:
         print("Error: numbers.txt' was not found.")
 
+if __name__ == "__main__":
+    main()
